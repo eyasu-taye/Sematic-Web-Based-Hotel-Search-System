@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2023/1/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hp/ontologies/2023/1/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/hp/ontologies/2023/1/untitled-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-3" IRI="http://www.semanticweb.org/hp/ontologies/2023/1/untitled-ontology-3#"/>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fiveStar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fourStar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#threeStar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#comparies_price"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains_hotel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#found_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_price"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#search_by_city"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#search_by_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#City_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Country_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Hotel_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Price_value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Price_Value_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Price_Value_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Price_Value_3"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fiveStar"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fourStar"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#threeStar"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#fiveStar"/>
+        <Class IRI="#fourStar"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#fiveStar"/>
+        <Class IRI="#threeStar"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#fourStar"/>
+        <Class IRI="#threeStar"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#City_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fiveStar"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#Price_Value_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#fourStar"/>
+        <NamedIndividual IRI="#Price_Value_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#threeStar"/>
+        <NamedIndividual IRI="#Price_Value_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains_hotel"/>
+        <NamedIndividual IRI="#City_1"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains_hotel"/>
+        <NamedIndividual IRI="#City_2"/>
+        <NamedIndividual IRI="#Hotel_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains_hotel"/>
+        <NamedIndividual IRI="#City_3"/>
+        <NamedIndividual IRI="#Hotel_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#found_in"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <NamedIndividual IRI="#City_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <NamedIndividual IRI="#Price_Value_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Hotel_2"/>
+        <NamedIndividual IRI="#Price_Value_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Hotel_3"/>
+        <NamedIndividual IRI="#Price_Value_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Price_Value_2"/>
+        <NamedIndividual IRI="#Price_Value_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_price"/>
+        <NamedIndividual IRI="#Price_Value_3"/>
+        <NamedIndividual IRI="#Price_Value_3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#City_name"/>
+        <NamedIndividual IRI="#City_1"/>
+        <Literal>Addis Ababa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#City_name"/>
+        <NamedIndividual IRI="#City_2"/>
+        <Literal>Bahrdar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#City_name"/>
+        <NamedIndividual IRI="#City_3"/>
+        <Literal>Adama</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal>Ethiopia Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal>Hilton Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal>Sheraton Addis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_1"/>
+        <Literal>Sky Light Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_2"/>
+        <Literal>Casanches Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_2"/>
+        <Literal>Eliyana Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_2"/>
+        <Literal>Inter Continetinetal Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_2"/>
+        <Literal>Yerer Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_3"/>
+        <Literal>Balderas Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_3"/>
+        <Literal>Delight Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_3"/>
+        <Literal>Plaza Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Hotel_name"/>
+        <NamedIndividual IRI="#Hotel_3"/>
+        <Literal>Semen Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price_value"/>
+        <NamedIndividual IRI="#Price_Value_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price_value"/>
+        <NamedIndividual IRI="#Price_Value_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price_value"/>
+        <NamedIndividual IRI="#Price_Value_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#has_price"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#has_price"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#comparies_price"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#comparies_price"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comparies_price"/>
+            <Class IRI="#Person"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains_hotel"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#found_in"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#found_in"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#found_in"/>
+            <Class IRI="#Hotel"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#found_in"/>
+            <Class IRI="#Hotel"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_price"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#search_by_city"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#search_by_name"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#comparies_price"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#comparies_price"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#comparies_price"/>
+            <Class IRI="#Price"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains_hotel"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#found_in"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#found_in"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#found_in"/>
+            <Class IRI="#City"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_price"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#search_by_city"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#search_by_name"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#City_name"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Country_name"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Hotel_name"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Hotel_name"/>
+        <Class IRI="#fiveStar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Hotel_name"/>
+        <Class IRI="#fourStar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Hotel_name"/>
+        <Class IRI="#threeStar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price_value"/>
+        <Class IRI="#Price"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#City_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Country_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Hotel_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Price_value"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.24.2023-01-14T21:28:32Z) https://github.com/owlcs/owlapi -->
+
